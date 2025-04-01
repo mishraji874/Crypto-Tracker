@@ -4,22 +4,23 @@ import Alert from "../Alert/Alert";
 import useFetchCoinHistory from "../../hooks/useFetchCoinHistory";
 
 function CoinInfoContainer({ coinId }) {
+
     const { historicData, isError, isLoading, currency, days, setDays, setCoinInterval } = useFetchCoinHistory(coinId);
 
     if(isLoading) {
-        return <PageLoader />;
+        return <PageLoader />
     }
 
     if(isError) {
-        return <Alert message="Error fetching data" type="error" />;
+        return <Alert message="Error fetching data" type="error" />
     }
 
     return (
         <>
             <CoinInfo 
-                historicData={historicData}
-                setDays={setDays}
-                setCoinInterval={setCoinInterval}
+                historicData={historicData} 
+                setDays={setDays} 
+                setCoinInterval={setCoinInterval} 
                 days={days}
                 currency={currency}
             />
