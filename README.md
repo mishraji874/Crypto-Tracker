@@ -2,7 +2,7 @@
 
 A modern cryptocurrency tracking application built with React that allows users to monitor real-time crypto prices, view historical data through charts, and track market trends.
 
-[Live Demo](https://crypto-project-coin-gecko-tijg.vercel.app/)
+[Live Demo](https://crypto-tracker-pi-green.vercel.app/)
 
 ## Features
 
